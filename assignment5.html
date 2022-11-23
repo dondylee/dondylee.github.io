@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>A5: Getting Meshy! and Lamps!</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <h1>A5: Getting Meshy! and Lamps!</h1>
+
+            <h2>Part 1</h2>
+
+            <p>
+                Part 1 of this assignment asked us to modify the mesh of two STLs to product a single printable STL. 
+            </p>
+
+            <p>
+                To begin, I explored files that interested me on Thingiverse. Two files that interested me were (1) a file of Yoshi and (2) a file of Groudon the legendary Pokemon. I am an avid gamer, and so these two were most in line with my interests.
+            </p>
+
+            <p>
+                <img src="yoshi.png" height=400></a>
+                <img src="groudon.png" height=400></a>
+            </p>
+
+            <p>
+                Afterwards, I downloaded the STL files and imported them into Rhino. The files were already very detailed--as indicated by their number of meshes or polygons. Although the Groudon file was a closed mesh, the Yoshi file was an open mesh. Therefore, I reduced the mesh or number of polygons in order to transfer it into a closed mesh.
+            </p>
+
+            <p>
+                <img src="transferredstls.png" height=400></a>
+            </p>
+
+            <p>
+                Transforming an open mesh to a closed mesh was a process of trial and error. Reducing the polygon count by 50% was not enough, and so I had to signficantly lessen the polygon count to 400 from 4000. Ultimately, I reached a Yoshi mesh that was closed.
+            </p>
+
+            <p>
+                <img src="yoshi1.png" width=400></a>
+                <img src="yoshi2.png" width=400></a>
+                <img src="yoshi3.png" width=400></a>
+            </p>
+
+            <p>
+                To combine the two meshes, I positioned Yoshi as if the character was riding Groudon's back. I made sure the meshes did not overlap too much in case that would cause errors. Once I was satisfied with the positioning, I combined the meshes by using Boolean Union. This produced a single printable STL, which I then exported.
+            </p>
+
+            <p>
+                <img src="combinedmesh1.png" height=400></a>
+            </p>
+
+            <p>
+                <img src="combinedmesh2.png" height=400></a>
+            </p>
+
+
+            <p>
+                <a href="MeshedObjects.3dm">Link to my Rhino file</a> <br>
+                <a href="MeshedObjects.stl">Link to my STL file</a> <br>
+            </p>
+
+            <h2>Part 2</h2>
+
+            <p>
+                Part 2 of this assignment asked us to create a lamp using digital fabrication techniques from prior weeks. 
+            </p>
+
+            <p>
+                To begin, I ordered my lamp and sketched out a potential solution. For my lamp, I wanted to create one solid frame that would sit on top of the lantern by relying on its slope. I then wanted to hang rectangular blocks around the frame so that this would complete the lamp.
+            </p>
+
+            <p>
+                <img src="Lamp_Innards.png" height=400></a>
+            </p>
+
+            <p>
+                I soon realized the solid frame would be difficult to print. Therefore, instead of hooks to attach the rectangular frames, I decided to create holes on the solid frame that would act as the means of attachment. Afterwards, I started measuring the lantern before starting my design.
+            </p>
+
+            <p>
+                <img src="lampwidth.png" height=400></a>
+                <img src="lamptoplength.png" height=400></a>
+            </p>
+
+            <p>
+                First, I created a dome with the slightly larger measurements to better fit the lantern. I used a 20 mm radius circle as the base of the dome and then extruded it to make it 3D. Then, I also created a tube that would give space for the rectangular shapes to be attached. Although I thought my measurements would be correct, I realized the dome was too circular in contrast to the shape of the lantern, which has a more sharp angle. Thus, I am working on fixing this part.
+            </p>
+
+            <p>
+                <img src="lampfirstdraft.png" height=400></a>
+            </p>
+
+            <p>
+                Credit<br>
+                Thank you to Junchao's presentation and help during office hours. 
+            </p>
+        </div>
+        
+    </body>
+</html>

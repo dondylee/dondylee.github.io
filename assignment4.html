@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>A4: Subtractive Manufacturing</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <h1>A4: Subtractive Manufacturing</h1>
+
+            <p>
+                This assignment asked us to create a box in one of two ways: (1) CNC milling or (2) 3D printing. I chose the former option because I wanted to try out a different method. Therefore, for my overall process, I first built my design on Rhino, set up my DXF on KiCAD, imported my Gerber files to Bantam Tools, and then went to the Mill to cut.
+            </p>
+
+            <p>
+                To begin, I started laying out my pieces on Rhino. I measured the RF1 copper board and found that it was 10cm x 7cm. Thus, I created a rectangle of that size for reference on Rhino. Then, I used the polyline segments tool to create the outlines, which will be connected with finger edge joints that have dogbones. 
+            </p>
+
+            <p>
+                <img src="A4_original.png" width=400></a>
+            </p>
+
+            <p>
+                Afterwards, I worked on the engraving that would go on my pieces. I decided on Pepe because I was feeling down this week (like Pepe). I first found a line drawing of Pepe and then used the Vectorize plug-in to transform the image into a curve. I scaled the image down to 50% and then placed it on top of my big piece. 
+            </p>
+
+            <p>
+                <img src="pepe.png" width=400></a>
+                <img src="A4_original2.png" width=400></a>
+            </p>
+
+            <p>
+                Following the instructions on the class slides, I separated the cutting and engraving paths, exported them as DXF files, and then set them up on KiCAD. On KiCAD, I checked that the designs matched my Rhino files, and then I plotted my designs as Gerber files. Afterwards, I went to the Mill to cut. I imported and configured my files onto Bantam Tools and used these measurements: Trace Depth: 0.15 mm; Zoffset = 1.55 mm. 
+            </p>
+
+            <p>
+                <img src="A4_setting.png" width=400></a>
+                <img src="A4_printing.png" width=400></a>
+            </p>
+
+            <p>
+                When I started printing, however, I experienced failure twice because the copper boards kept flying out of its position. Therefore, to resolve this, I made sure to cover the entire backside with tape and also reduced the Feed Rate and Spindle Rate to 80%. Furthermore, I experience a problem with the homing of the spindle--the position of the spindle did not match the preview on Bantam Tools. Nevertheless, I continued the print as a test run.
+            </p>
+
+            <p>
+                <img src="A4_pepegood.png" width=400></a>
+            </p>
+            
+            <p>
+                The print was good; however, the spindle broke. Thus, I changed the spindle and prepared for the cut that includes the edges. After printing, I realized the spindle may have been thicker than my original spindle, which is the reason why so much of Pepe was shaved off. I also realized that my pieces did not fit.
+            </p>
+
+            <p>
+                <img src="A4_pepebad.png" width=400></a>
+            </p>
+
+            <p>
+                As a result, I went back to Rhino and redid the design. I made sure that the width of the insertion slots were precisely matching.
+            </p>
+
+            <p>
+                <img src="A4_updated.png" width=400></a>
+                <img src="A4_updated2.png" width=400></a>
+            </p>
+
+            <p>
+                I went back to the Mill to cut my parts while anticipating this version would work. However, eventhough the parts lined up on Rhino, the pieces that I cut did not line up. The reason could be that the spindle that I used was too thick or that my setting was off. Thus, I plan to print again with a different setting or spindle.
+            </p>
+
+            <p>
+                <img src="A4_pepelined.png" width=400></a>
+                <img src="A4_boxparts.png" width=400></a>
+            </p>
+
+            <p>
+                This is my final outcome! Do you see Pepe?
+            </p>
+
+            <p>
+                <img src="A4_box1.png" width=400></a>
+                <img src="A4_box2.png" width=400></a>
+            </p>
+
+            <p>
+                Pepe:
+            </p>
+
+            <p>
+                <img src="pepefail_AdobeExpress.gif" width=400></a>
+            </p>
+
+            <p>
+                <a href="A4_box.3dm">Link to my Rhino file</a> <br>
+                <a href="A4-2.kicad_pro">Link to my KiCAD file</a> <br>
+            </p>
+
+            <p>
+                Credit<br>
+                Thank you to Junchao's presentation and help during office hours. Also, credit to the developers of Vectorize for making tracings of images easier on Rhino.
+            </p>
+        </div>
+        
+    </body>
+</html>

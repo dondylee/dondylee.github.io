@@ -1,0 +1,141 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>A1: Modelling and Laser Cutting</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <h1>A1: Modelling and Laser Cutting</h1>
+
+            <p>
+                This assignment asked us to create a kit consisting of at least 30 instances of at least one unique part. 
+            </p>
+
+            <p>
+                Initially, I wanted to create a kit made up of shurikens, which is a type of throwing weapon. However, I realized the shapes would not fit properly together, and so I decided to work on something simpler for the sake of learning. Because I did not want to work with squares, I decided to create a circular kit that could be connected at multiple angles.
+            </p>
+
+            <p>
+                <img src="Shurikens.png" width=400></a>
+            </p>
+
+            <p>
+                To begin, I used my electronic digital caliper to measure the box thickness. I realized that this was important because an intersecting slot that is too thin would not make the kit press fit. 
+            </p>
+
+            <p>
+                <img src="Box-Measurement.png" width=400></a>
+            </p>
+
+            <p>
+                Next, I opened up Rhino and created the foundation of my design. I created a circle that is 50mm, which I thought was an appropriate size for one kit. Then, I worked on the intersecting slots. I first deliberated on making the slot width greater than 4.2mm so that the kits would connect smoothly. However, after learning that the laser cut burn causes extra cardboard to be teared off than the precise measurement, I concluded that exactly 4.2 was sufficient. 
+            </p>
+
+            <p>
+                <img src="Laser-1.png" width=400></a>
+            </p>
+
+            <p>
+                I wanted my kit to be assemblable at all angles. Therefore, I rotated my initial rectangle and conducted an ArrayPolar command to replicate it at different angles. The finishing intersecting slot has a height of 10mm, which I also thought was sufficient for connection.
+            </p>
+
+            <p>
+                <img src="Laser-2.png" width=400></a>
+            </p>
+
+            <p>
+                I trimmed the portions that would not be needed for the kit. 
+            </p>
+
+            <p>
+                <img src="Laser-3.png" width=400></a>
+            </p>
+
+            <p>
+                Afterwards, I joined the curves together to create one whole shape. This ensures that the laser cutting would be done in an efficient manner.
+            </p>
+
+            <p>
+                <img src="Laser-4.png" width=400></a>
+            </p>
+
+            <p>
+                I then gave height to the shape by using the ExtrudeCrv command. The height I gave was 4.2mm, which was the reading that came our from the digital caliper.
+            </p>
+
+            <p>
+                <img src="Laser-5.png" width=400></a>
+            </p>
+
+            <p>
+                Finally, I exported the Rhino file into Illustrator to get it prepared for printing. I created a canvas that was the dimensions of my cardboard box, which was 17inch x 18.5 inch. 
+            </p>
+
+            <p>
+                <img src="Laser-Illustrator.png" width=400></a>
+            </p>
+
+            <p>
+                To print, because the Mill printers were broken, I went to a different maker space to print. There, I placed my cardboard and used a different laser printer. The settings I used are attached below:
+            </p>
+
+            <p>
+                <img src="laser-print-settings.png" width=400></a>
+            </p>
+
+            <p>
+                To ensure that my kit would fit, I first did a trial run and just printed two pieces. The fit was a little tight but had no issues.
+            </p>
+
+            <p>
+                <img src="a1-print-test.png" width=400></a>
+            </p>
+
+            <p>
+                <video width="400" controls autoplay>
+                    <source src="a1-printing-smaller.MOV" type="video/mp4">
+                </video>
+            </p>
+
+            <p>
+                I then printed 30 copies of my kit knowing that there were no issues with the test prints. 
+            </p>
+
+            <p>
+                <img src="a1-print-stuff.png" width=400></a>
+            </p>
+
+            <p>
+                <video width="400" controls autoplay>
+                    <source src="a1-printing-vid1.MOV" type="video/mp4">
+                </video>
+            </p>
+
+            <p>
+                Here are some photos of my assembled kit! I realized these are very flexible and can be assembled in any form I imagine. Therefore, I decided to create a car using my pieces. Do you see the car?
+            </p>
+
+            <p>
+                <img src="a1-print-final1.png" width=400></a>
+            </p>
+
+            <p>
+                <img src="a1-print-final2.png" width=400></a>
+            </p>
+
+            <p>
+                <a href="A1.3dm">Link to my Rhino file</a> <br>
+                <a href="A1.ai">Link to my Illustrator file</a>
+            </p>
+
+        </div>
+        
+    </body>
+</html>
